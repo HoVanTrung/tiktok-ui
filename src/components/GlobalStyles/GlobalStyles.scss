@@ -1,7 +1,10 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 :root {
-  --preimary: #fe2c55;
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --color-text: #ccc;
   //Default Layout
   --default-layout-header-height: 60px;
   --defalut-layout-width: 1150px;
@@ -22,4 +25,16 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed; //toi uu hoa toc do load font-amily
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--color-text);
+  text-decoration: none;
 }
